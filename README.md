@@ -11,7 +11,7 @@ If started in the middle of a subtitle interval, `AVPlayer` displays the first s
 ## Steps to Reproduce:
 1. Launch the AVPlayerItemLegibleOutputTest application from the attached ZIP archive (or clone it from https://github.com/tzahola/AVPlayerItemLegibleOutput-bug )
 2. The application will show a rudimentary video player, which uses an AVPlayer under the hood.
-3. Press "Start 480p" or "Start 1024p" to start the sample video. The sample video has a WebVTT subtitle attached via AVMutableComposition (see ViewController.swift).
+3. Press "Start 480p" or "Start 1024p" to start the sample video. The sample video has a WebVTT subtitle attached via `AVMutableComposition` ([see ViewController.swift](https://github.com/tzahola/AVPlayerItemLegibleOutput-bug/blob/master/AVPlayerItemLegibleOutputTest/ViewController.swift#L45)).
 4. The first subtitle interval is 00:00:00.001 → 00:00:03.000, and we seek to 00:00:00.500 before starting playback.
 
 ## Expected Results:
