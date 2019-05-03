@@ -2,9 +2,6 @@
 
 Demonstration project for a bug that occurs when `AVPlayer` is used with `AVPlayerItemLegibleOutput`.
 
-![animation](https://github.com/tzahola/AVPlayerItemLegibleOutput-bug/blob/master/loop.gif)
-![screenshot](https://github.com/tzahola/AVPlayerItemLegibleOutput-bug/blob/master/screenshot.png)
-
 ## Area:
 AVFoundation
 
@@ -23,9 +20,15 @@ Because the AVPlayerItem has an `AVPlayerItemLegibleOutput` attached with `suppr
 ## Actual Results:
 When testing on an iPad Pro, 7 out of 10 times when playback is started the first subtitle is by `AVPlayer`. Moreover, this first subtitle is displayed throughout the whole playback, until `AVPlayer` is torn down (stopped & deallocated). Meanwhile the legible output delegate correctly receives the subtitle updates, so the end result is that the video player will display two subtitles: the first subtitle which is stuck, rendered by `AVPlayer` at the bottom; and the correct subtitles rendered through the legible output delegate at the top. 
 
-Please check the attached demonstration video.
+Please check the attached demonstration video:
 
-Some observations: the issue occurs less often when starting the 480p video instead of the 1024p one. It also happens less often on older devices (e.g. iPad Pro 3rd gen vs iPad Pro 2nd gen).
+![animation](https://github.com/tzahola/AVPlayerItemLegibleOutput-bug/blob/master/loop.gif)
+
+Still image:
+
+![screenshot](https://github.com/tzahola/AVPlayerItemLegibleOutput-bug/blob/master/screenshot.png)
+
+**Some observations:** the issue occurs less often when starting the 480p video instead of the 1024p one. It also happens less often on older devices (e.g. iPad Pro 3rd gen vs iPad Pro 2nd gen).
 
 ## Version/Build:
 iOS 12.2
