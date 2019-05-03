@@ -34,6 +34,6 @@ Still image:
 iOS 12.2
 
 ## Configuration:
-iPad Pro 12.9" (3rd generation), MTEL2HC/A happens around 9 out of 10 video starts
-iPad Pro 12.9" (2nd generation), MQDA2HC/A happens around 7 out of 10 video starts
-iPhone 7 Plus, MN4W2GH/A happens around 1 in 50 video starts
+- iPad Pro 12.9" (3rd generation), MTEL2HC/A happens around 9 out of 10 video starts
+- iPad Pro 12.9" (2nd generation), MQDA2HC/A happens around 7 out of 10 video starts
+- iPhone 7 Plus, MN4W2GH/A happens around 1 in 50 video starts
